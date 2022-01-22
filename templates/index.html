@@ -1,0 +1,46 @@
+{% extends 'wrapper.html' %}{% load static %}{% block wrapper %} {% include 'nav.html' %}
+
+<main class="main-content" style="height: 69vh">
+  <div class="container">
+    <div class="row justify-content-around">
+      <div class="col-md-6 col-12 d-flex flex-column align-items-center">
+        <img src="{% static 'images/morelogo.svg' %}" alt="" />
+        <p class="text-center">
+          MORE 2019) is a certified programme initiated by IT-Kerala, Kerala state RUTRONIX is the ultimate Microsoft office bundle (Release 2019). This course covers a wide range of topics done in an extremely professional manner and helps the learners to accomplish e- regular tasks easily and with
+          greater efficiency, Microsoft Office is the utmost choice of many office professionals and useful for individuals for their day-to-day tasks to an extent. This course can walk you through creating professional-quality documents, organize and analyze information, function mathematical
+          calculations, and create dynamic slide presentations more digitally and effectively. This course will help you master MS Office2019, reduce your MS Office frustrations and help you claw back the precious time you spend getting lost in these powerful business applications.
+        </p>
+        <a href="{% url 'studentdata:students' %}" class="button">Students</a>
+      </div>
+    </div>
+<div class="row">
+  <div class="col-12">
+      <div class="embed-responsive embed-responsive-16by9">
+    <video class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"></video>
+  </div>
+  </div>
+</div>
+  </div>
+  <!-- .container -->
+</main>
+<!-- .main-content -->
+
+<footer class="text-center text-lg-start">
+  <!-- Copyright -->
+  <!-- <div class="container">
+
+	  <div class="social-links">
+		  <a href="#"><i class="bi bi-facebook"></i></a>
+		  <a href="#"><i class="bi bi-google-plus"></i></a>
+		  <a href="#"><i class="bi fa-twitter"></i></a>
+		  <a href="#"><i class="bi fa-pinterest"></i></a>
+		</div>
+	</div> -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2020 Copyright:
+    <a class="text-white" href="#">Groware </a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+{% endblock wrapper %}

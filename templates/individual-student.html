@@ -1,0 +1,92 @@
+{% extends 'wrapper.html' %} {% block wrapper %} {% include 'nav.html' %}
+<div class="container-fluid mt-5">
+  <div class="row">
+    <div class="col-md">
+      <div class="card border-0">
+        <div class="card-header" id="light-blue-accent-4">
+          <h5>Student Information</h5>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-6">
+                    <table class="table table-dark" style="height: 100%;">
+                        <tr>
+                            <td>
+                                <strong>Name:</strong> 
+                            </td>
+                            <td>
+                                {{student.name}}
+                            </td>
+                        </tr>
+                            <td>
+                                <strong>Email:</strong> 
+                            </td>
+                            <td>
+                                {{student.email}}
+                            </td>
+                        </tr>
+                            <td>
+                                <strong>Phone:</strong> 
+                            </td>
+                            <td>
+                                {{student.phone}}
+                            </td>
+                        </tr>
+                            <td>
+                                <strong>Address:</strong> 
+                            </td>
+                            <td>
+                                {{student.address}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Date of Birth:</strong> 
+                            </td>
+                            <td>
+                                {{student.dob}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Course:</strong> 
+                            </td>
+                            <td>
+                                {{student.course}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Year Joined: </strong> 
+                            </td>
+                            <td>
+                                {{student.year_joined}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Student Address:</strong> 
+                            </td>
+                            <td>
+                                {{student.address}}
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-6 rounded-2 d-flex justify-content-center">
+                    <img src="{{  student.photo.url }}" alt="{{student.name}}" class="img-fluid rounded-3" style="max-height:50vh;" />
+                </div>
+            </div>
+                <div class="d-flex justify-content-center">
+                    <a class="btn btn-outline-info  btn-sm btn-block m-2" href="{% url 'studentdata:edit_student' student.id %}">Update Student</a>
+                    
+                    <a class="btn btn-outline-info btn-sm btn-block m-2" href="{% url 'studentdata:create_student' %}">New Registration</a>
+                </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br />
+</div>
+{% endblock wrapper %}

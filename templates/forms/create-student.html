@@ -1,0 +1,26 @@
+{% extends 'wrapper.html' %}
+{% load static %}
+{% block wrapper %}
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-6 d-md-flex d-none" style="background: url({% static 'images/login-img.svg' %}); background-position:center; background-repeat:no-repeat; background-size:cover;">
+<!-- <img src="{% static 'images/login-img.svg' %}" alt="" class="img-fluid"> -->
+</div>
+<div class="col-12 col-md-6"> 
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}    
+        
+        {{student_form.as_p}}
+        
+        <a href="{% url 'studentdata:home' %}" class="btn btn-warning text-dark">Cancel</a>
+        
+        <input type="submit" value="{{value}}" class='ms-auto btn btn-primary fs-6'>
+        
+    </form>
+</div>
+</div>
+</div>
+    
+
+{% endblock wrapper %}

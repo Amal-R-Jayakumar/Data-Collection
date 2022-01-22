@@ -1,0 +1,58 @@
+body {
+  color: #fff;
+  height:100vh;
+  font-family: 'Roboto', "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: normal;
+  /* background-image: -webkit-radial-gradient(circle, #39323e, #262029); */
+  background-color:rgb(15,5,31);
+  background-size: cover;
+  background-attachment: fixed; 
+}
+.site-header{
+  background: linear-gradient(90deg, rgba(12,2,28,1) 0%, rgb(36, 24, 64) 50%, rgba(12,2,28,1) 100%);
+}
+a {
+  font-family: 'Raleway',  cursive;
+  font-weight: 500;
+  text-decoration: none !important;
+  color: #61d8ba !important; }
+
+  #total-orders {
+  background-color: #4cb4c7;
+}
+#orders-delivered {
+  background-color: #7abecc;
+}
+#orders-pending {
+  background-color: #7cd1c0;
+}
+#light-blue-accent-4 {
+  background-color: #01579b;
+  color: #ffffff;
+}
+.card-body{
+  background-color: #181b2e;
+}
+.card-header{
+  background-color: #100d11;
+}
+.form-control{
+  border: 0;
+  border-radius: 24px;
+  background-color: #3f284a;
+  color:#ffffff;
+}
+.form-control:focus{
+  background-color: #32224f;
+  color:#ffffff;
+}
+a.btn, input[type='submit']{
+  border-radius: 24px;
+  color:#260e32;
+}
+.logo{
+  background: radial-gradient(circle, rgba(12,2,28,1) 0%, rgb(111, 86, 162) 0%, rgba(50,34,75,1) 100%);
+  border-radius: 100px;
+}
